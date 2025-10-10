@@ -59,8 +59,7 @@
             </div>
             <div class="mt-6 text-sm text-neutral-600 dark:text-neutral-400 flex flex-wrap gap-4">
               <span>📍 Salta, Argentina</span>
-              <a href="mailto:danjel2014@gmail.com" class="hover:text-brand-600">✉️ danjel2014@gmail.com</a>
-              <a href="tel:+543874691813" class="hover:text-brand-600">📱 +54 387 469 1813</a>
+           
             </div>
           </div>
           <div class="relative">
