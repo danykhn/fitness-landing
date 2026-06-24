@@ -121,56 +121,127 @@
     <section id="experiencia" class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20">
       <div class="flex items-end justify-between reveal">
         <h2 class="text-2xl font-bold">Experiencia</h2>
-        <span class="text-sm text-neutral-500">Nov 2023 – Actual</span>
+        <span class="text-sm text-neutral-500">Abr 2021 – Actual</span>
       </div>
+
+      <!-- Primeras 3 entradas (siempre visibles) -->
       <div class="mt-8 grid md:grid-cols-2 gap-6">
         <article class="experience-card reveal reveal-delay-1">
-          <header class="flex items-center justify-between gap-4">
-            <h3 class="font-semibold text-lg">Sistemas Activos CL – Chile</h3>
-            <span class="badge-role">FullStack</span>
+          <header class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-semibold text-lg">ZonaChamba – Argentina, Salta</h3>
+              <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">Part Time · Actual</p>
+            </div>
+            <span class="badge-role shrink-0">FrontEnd</span>
           </header>
-          <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">Desarrollo y mantenimiento con Vue 3, Laravel 10, PHP 8, AdonisJS y PostgreSQL.</p>
+          <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">Traspaso de app Android/iOS a web con Angular 17 e integración de API SupaBase.</p>
           <ul class="mt-3 space-y-2 text-sm list-disc ml-5">
+            <li>Replicación de toda la funcionalidad nativa en versión web responsive.</li>
+            <li>Integración de API SupaBase para autenticación y gestión de datos.</li>
+            <li>Angular 17 por la complejidad de componentes y manejo de estado.</li>
+          </ul>
+        </article>
+
+        <article class="experience-card reveal reveal-delay-2">
+          <header class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-semibold text-lg">Megainnova – Chile</h3>
+              <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">Remoto · Nov 2024 – 2025</p>
+            </div>
+            <span class="badge-role shrink-0">FullStack</span>
+          </header>
+          <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">Módulos para ERP de firma digital de documentos (SECHE-Perú). Stack PHP 7.4 + SQL Server.</p>
+          <ul class="mt-3 space-y-2 text-sm list-disc ml-5">
+            <li>Integración de la API de firma digital <b>Rubrika</b>.</li>
+            <li>Flujos de firma remota, presencial y temporal.</li>
+            <li>Código orientado a objetos siguiendo lineamiento existente de la empresa.</li>
+          </ul>
+        </article>
+
+        <article class="experience-card reveal reveal-delay-3 md:col-span-2">
+          <header class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-semibold text-lg">Sistemas Activos CL – Chile</h3>
+              <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">Remoto · Nov 2023 – 2024</p>
+            </div>
+            <span class="badge-role shrink-0">FullStack</span>
+          </header>
+          <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">Desarrollo y mantenimiento con Python & Django, Vue 3, Laravel 10, PHP 8, AdonisJS y PostgreSQL.</p>
+          <ul class="mt-3 space-y-1.5 text-sm list-disc ml-5 columns-2 gap-6">
             <li>Portal <b>Chile Atiende</b>: módulo "Conectados" (Vue 3 + Vuex, BackOffice Laravel).</li>
-            <li><b>Superintendencia de Autoexclusión</b>: ajustes de flujo y queries en PostgreSQL (AdonisJS, Vue 2 + Bulma).</li>
+            <li><b>Superintendencia de Autoexclusión</b>: modificaciones de flujo y queries PostgreSQL (AdonisJS, Vue 2).</li>
             <li><b>Apoyo a Víctimas</b>: módulo de expedientes (PHP 7.5 + jQuery, SQL Server).</li>
-            <li><b>SUBDERE</b>: reglas por edad en formularios (PHP 5.2, SQL Server).</li>
+            <li><b>SUBDERE</b>: validaciones en formularios (PHP 5.2, SQL Server).</li>
             <li><b>JUNJI</b>: sistema desde cero (Angular 17 + Spring Boot 3.2), SSO y Angular Material.</li>
           </ul>
         </article>
-        <article class="experience-card reveal reveal-delay-2">
-          <header class="flex items-center justify-between gap-4">
-            <h3 class="font-semibold text-lg">DiSaludClinic – México</h3>
-            <span class="badge-role">FullStack</span>
-          </header>
-          <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">Dashboard de gestión con React 18 y TailwindCSS. Integración con Firebase y Express.</p>
-          <ul class="mt-3 space-y-2 text-sm list-disc ml-5">
-            <li>Implementación de TailwindCSS y experiencia de usuario accesible.</li>
-            <li>Gestión de productos, usuarios, promociones, galería e informes.</li>
-          </ul>
-        </article>
-        <article class="experience-card reveal reveal-delay-3">
-          <header class="flex items-center justify-between gap-4">
-            <h3 class="font-semibold text-lg">MiClinicaMedica – Corrientes</h3>
-            <span class="badge-role">FullStack</span>
-          </header>
-          <ul class="mt-3 space-y-2 text-sm list-disc ml-5">
-            <li>Búsqueda por DNI y descarga de credenciales PDF (Zenrise API).</li>
-            <li>Tarea automatizada con NestJS para reportes mensuales.</li>
-            <li>Panel admin con roles/permiso y gráficos ChartJS.</li>
-          </ul>
-        </article>
-        <article class="experience-card reveal reveal-delay-4">
-          <header class="flex items-center justify-between gap-4">
-            <h3 class="font-semibold text-lg">DGFTAM – Salta (SIAC)</h3>
-            <span class="badge-role">FullStack</span>
-          </header>
-          <ul class="mt-3 space-y-2 text-sm list-disc ml-5">
-            <li>Módulo de Roles y Permisos (Spatie, Laravel + Vue 2).</li>
-            <li>Paneles de usuario/administrador y pago múltiple (MacroClick).</li>
-            <li>Optimización de código, Docker, PostgreSQL y Oracle (API).</li>
-          </ul>
-        </article>
+      </div>
+
+      <!-- Experiencia adicional (toggle) -->
+      <div class="exp-extra" :class="{ 'exp-extra--open': showAllExp }">
+        <div class="mt-4 grid md:grid-cols-2 gap-6">
+          <article class="experience-card">
+            <header class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="font-semibold text-lg">DiSaludClinic – México</h3>
+                <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">Remoto · Ene 2023 – Ago 2023</p>
+              </div>
+              <span class="badge-role shrink-0">FrontEnd</span>
+            </header>
+            <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">Dashboard de gestión con React 18 y TailwindCSS. Integración con Firebase y Express.</p>
+            <ul class="mt-3 space-y-2 text-sm list-disc ml-5">
+              <li>Implementación de TailwindCSS y experiencia de usuario accesible.</li>
+              <li>Gestión de productos, usuarios, promociones, galería e informes.</li>
+              <li>Control de versiones con GitHub.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <header class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="font-semibold text-lg">MiClinicaMedica – Corrientes</h3>
+                <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">Remoto · May 2021 – 2023</p>
+              </div>
+              <span class="badge-role shrink-0">FrontEnd</span>
+            </header>
+            <ul class="mt-3 space-y-2 text-sm list-disc ml-5">
+              <li>Búsqueda por DNI y descarga de credenciales PDF (Zenrise API).</li>
+              <li>Automatización de tareas con NestJS para reportes mensuales.</li>
+              <li>Panel admin con roles/permisos y gráficos ChartJS.</li>
+              <li>Uso de Docker y GitLab para despliegues.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <header class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="font-semibold text-lg">DGFTAM – Salta (SIAC)</h3>
+                <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">Presencial · Abr 2021 – Jun 2023</p>
+              </div>
+              <span class="badge-role shrink-0">FrontEnd</span>
+            </header>
+            <ul class="mt-3 space-y-2 text-sm list-disc ml-5">
+              <li>Funcionalidades del sistema de autogestión <b>SIAC</b>.</li>
+              <li>Módulo de roles y permisos con Spatie (Laravel + Vue 2).</li>
+              <li>Paneles de usuario/administrador y pago múltiple (MacroClick).</li>
+              <li>Docker, PostgreSQL y Oracle (API).</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+
+      <!-- Botón toggle -->
+      <div class="mt-8 flex justify-center">
+        <button @click="showAllExp = !showAllExp" class="btn-toggle-exp">
+          <span>{{ showAllExp ? 'Ocultar' : 'Ver más experiencia' }}</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+            class="w-4 h-4 transition-transform duration-300"
+            :class="{ 'rotate-180': showAllExp }"
+          >
+            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+          </svg>
+        </button>
       </div>
     </section>
 
@@ -327,6 +398,7 @@ const texts = [
   "NestJS · Laravel · APIs"
 ]
 const displayedText = ref("")
+const showAllExp = ref(false)
 let textIndex = 0
 let charIndex = 0
 let isDeleting = false
@@ -649,6 +721,44 @@ html { scroll-behavior: smooth; }
 }
 .dark .btn-secondary { border-color: #3f3f46; }
 .btn-secondary:hover { border-color: #2563eb; color: #2563eb; transform: translateY(-2px); }
+
+/* ── Experience expand/collapse ───────────────────────────────────────────── */
+.exp-extra {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.55s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
+  opacity: 0;
+}
+.exp-extra--open {
+  max-height: 2000px;
+  opacity: 1;
+}
+.btn-toggle-exp {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 24px;
+  border-radius: 9999px;
+  border: 1.5px solid #e5e7eb;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  background: white;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px -2px rgba(0,0,0,0.08);
+}
+.dark .btn-toggle-exp {
+  background: #171717;
+  border-color: #3f3f46;
+  color: #e5e7eb;
+}
+.btn-toggle-exp:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px -4px rgba(37,99,235,0.2);
+}
 
 /* ── Form ─────────────────────────────────────────────────────────────────── */
 .form-input {
