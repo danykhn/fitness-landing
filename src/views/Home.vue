@@ -124,7 +124,7 @@
         <span class="text-sm text-neutral-500">Abr 2021 – Actual</span>
       </div>
 
-      <!-- Primeras 3 entradas (siempre visibles) -->
+      <!-- Primeras entradas (siempre visibles) -->
       <div class="mt-8 grid md:grid-cols-2 gap-6">
         <article class="experience-card reveal reveal-delay-1">
           <header class="flex items-start justify-between gap-4">
@@ -158,28 +158,65 @@
           </ul>
         </article>
 
-        <article class="experience-card reveal reveal-delay-3 md:col-span-2">
-          <header class="flex items-start justify-between gap-4">
+        <!-- UltraSoftGaming – card destacado -->
+        <article class="experience-card reveal reveal-delay-3 md:col-span-2 experience-card--featured">
+          <header class="flex items-start justify-between gap-4 flex-wrap">
             <div>
-              <h3 class="font-semibold text-lg">Sistemas Activos CL – Chile</h3>
-              <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">Remoto · Nov 2023 – 2024</p>
+              <div class="flex items-center gap-2 flex-wrap">
+                <h3 class="font-semibold text-lg">UltraSoftGaming – Argentina, Buenos Aires</h3>
+                <span class="badge-featured">FullTime</span>
+              </div>
+              <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">Ene 2024 – May 2026 · PHP 7.8 · ReactJS · Resend</p>
             </div>
             <span class="badge-role shrink-0">FullStack</span>
           </header>
-          <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">Desarrollo y mantenimiento con Python & Django, Vue 3, Laravel 10, PHP 8, AdonisJS y PostgreSQL.</p>
-          <ul class="mt-3 space-y-1.5 text-sm list-disc ml-5 columns-2 gap-6">
-            <li>Portal <b>Chile Atiende</b>: módulo "Conectados" (Vue 3 + Vuex, BackOffice Laravel).</li>
-            <li><b>Superintendencia de Autoexclusión</b>: modificaciones de flujo y queries PostgreSQL (AdonisJS, Vue 2).</li>
-            <li><b>Apoyo a Víctimas</b>: módulo de expedientes (PHP 7.5 + jQuery, SQL Server).</li>
-            <li><b>SUBDERE</b>: validaciones en formularios (PHP 5.2, SQL Server).</li>
-            <li><b>JUNJI</b>: sistema desde cero (Angular 17 + Spring Boot 3.2), SSO y Angular Material.</li>
-          </ul>
+          <p class="mt-3 text-sm text-neutral-600 dark:text-neutral-300">Desarrollo de plataforma de casino online: módulos de administración y perfil de usuario.</p>
+          <div class="mt-4 grid sm:grid-cols-2 gap-4">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-wide text-neutral-400 mb-2">Sección Administración</p>
+              <ul class="space-y-1.5 text-sm list-disc ml-5">
+                <li>Personalización de emails (bienvenida, registro, anuncios).</li>
+                <li>Personalización de promociones.</li>
+                <li>Mantenedor de mensajes para usuarios.</li>
+                <li>Mantenedor de popups con anuncios.</li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-wide text-neutral-400 mb-2">Sección Perfil de Usuario</p>
+              <ul class="space-y-1.5 text-sm list-disc ml-5">
+                <li>Estado de cuenta: bonos y rollover.</li>
+                <li>Mensajería y Support live.</li>
+                <li>Métodos de pago y Retiros.</li>
+                <li>Verificación de usuario.</li>
+                <li>Integración GoogleAuth y Resend (email).</li>
+                <li>Movimientos, FreeSpin, Bonos disponibles.</li>
+                <li>Términos y condiciones.</li>
+              </ul>
+            </div>
+          </div>
         </article>
       </div>
 
       <!-- Experiencia adicional (toggle) -->
       <div class="exp-extra" :class="{ 'exp-extra--open': showAllExp }">
         <div class="mt-4 grid md:grid-cols-2 gap-6">
+          <article class="experience-card md:col-span-2">
+            <header class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="font-semibold text-lg">Sistemas Activos CL – Chile</h3>
+                <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">Remoto · Nov 2023 – 2024</p>
+              </div>
+              <span class="badge-role shrink-0">FullStack</span>
+            </header>
+            <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">Desarrollo y mantenimiento con Python & Django, Vue 3, Laravel 10, PHP 8, AdonisJS y PostgreSQL.</p>
+            <ul class="mt-3 space-y-1.5 text-sm list-disc ml-5 columns-2 gap-6">
+              <li>Portal <b>Chile Atiende</b>: módulo "Conectados" (Vue 3 + Vuex, BackOffice Laravel).</li>
+              <li><b>Superintendencia de Autoexclusión</b>: modificaciones de flujo y queries PostgreSQL (AdonisJS, Vue 2).</li>
+              <li><b>Apoyo a Víctimas</b>: módulo de expedientes (PHP 7.5 + jQuery, SQL Server).</li>
+              <li><b>SUBDERE</b>: validaciones en formularios (PHP 5.2, SQL Server).</li>
+              <li><b>JUNJI</b>: sistema desde cero (Angular 17 + Spring Boot 3.2), SSO y Angular Material.</li>
+            </ul>
+          </article>
           <article class="experience-card">
             <header class="flex items-start justify-between gap-4">
               <div>
@@ -617,6 +654,23 @@ html { scroll-behavior: smooth; }
 .experience-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 14px 32px -8px rgba(37,99,235,0.18);
+}
+.experience-card--featured {
+  border-color: rgba(37,99,235,0.3);
+  background: linear-gradient(135deg, rgba(37,99,235,0.03) 0%, rgba(124,58,237,0.03) 100%);
+}
+.dark .experience-card--featured {
+  border-color: rgba(37,99,235,0.25);
+  background: linear-gradient(135deg, rgba(37,99,235,0.06) 0%, rgba(124,58,237,0.06) 100%);
+}
+.badge-featured {
+  font-size: 0.65rem;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.03em;
 }
 .badge-role {
   font-size: 0.68rem;
